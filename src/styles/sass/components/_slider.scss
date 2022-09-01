@@ -1,0 +1,23 @@
+/* ===  =================================== _____________ Sliders Styles _____________ ====================================== */
+.intro {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $white;
+    width: 2rem;
+    height: 2rem;
+    // margin-top: 2rem;
+    border: 1px solid $white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: $transition;
+    &::after {
+      font-size: $font-1200;
+      transition: $transition;
+    }
+    &:hover {
+      background-color: $mainColor;
+      border-color: $mainColor;
+    }
+  }
+}
+/* ===  =================================== _____________ Sliders Styles _____________ ====================================== */

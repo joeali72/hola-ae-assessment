@@ -1,0 +1,9 @@
+// utilities imports
+@import './utilities/variables', './utilities/mixins', './utilities/classes';
+
+// base imports
+@import './base/reset', './base/typography', './base/global';
+
+// Components imports
+@import './components/header', './components/slider', './components/forms',
+  './components/loader';

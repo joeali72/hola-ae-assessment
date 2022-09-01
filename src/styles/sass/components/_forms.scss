@@ -1,0 +1,31 @@
+/* ===  =================================== _____________ Forms Styles _____________ ====================================== */
+.form {
+  &_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    @include for_phone() {
+      gap: 0;
+    }
+    @include for_miniTb() {
+      gap: 1rem;
+    }
+  }
+  .form-group {
+  }
+  .form-control {
+    box-shadow: none;
+    height: auto;
+    padding: 9px 15px;
+    border-radius: 0;
+    font-size: $font-1000;
+    &:focus {
+      box-shadow: none !important;
+      border-color: $black;
+    }
+  }
+  .form-select {
+    color: $textColor;
+  }
+}
+/* ===  =================================== _____________ Forms Styles _____________ ====================================== */

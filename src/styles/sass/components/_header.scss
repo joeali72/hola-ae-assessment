@@ -1,0 +1,31 @@
+/* ===  =================================== _____________ Header Styles _____________ ====================================== */
+header {
+  padding-top: 25px;
+  .navbar {
+    padding: 0;
+    &_box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+      &_logo {
+        display: inline-block;
+        width: 75px;
+      }
+      &_body {
+        &_title {
+          color: $black;
+          font-weight: 700;
+          font-size: $font-1800;
+          margin-bottom: 0.25rem;
+        }
+        &_text {
+          margin-bottom: 0;
+          color: $textColor;
+        }
+      }
+    }
+  }
+}
+
+/* ===  =================================== _____________ Header Styles _____________ ====================================== */

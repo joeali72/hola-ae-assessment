@@ -1,0 +1,41 @@
+/* ===  =================================== _____________ Global Styles _____________ ====================================== */
+// ________ Media Print ________ //
+@media print {
+  footer,
+  header,
+  .print {
+    display: none !important;
+  }
+}
+// ________ Media Print ________ //
+
+// == Shimiring //
+.shimiring {
+  // animation: shimmer 2s infinite;
+  @include animation(Shimiring 2s infinite);
+  background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+  background-size: 1000px 100%;
+}
+// == Shimiring //
+
+// == Section //
+section {
+  padding: 25px 0;
+}
+// == Section //
+
+// == NotFound //
+.notfound {
+  padding: 50px 0;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: $font-1500;
+  font-weight: 600;
+}
+// == NotFound //
+
+/* ===  =================================== _____________ Global Styles _____________ ====================================== */

@@ -1,0 +1,52 @@
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
+* {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+html {
+  font-size: 100%;
+  @include for_phone() {
+    font-size: 83%;
+  }
+  @include for_miniTb() {
+    font-size: 85%;
+  }
+  @include for_tablet() {
+    font-size: 90%;
+  }
+  @include for_miniLt() {
+    font-size: 95%;
+  }
+  @include for_labtop() {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-size: $font-1000;
+  font-weight: 400;
+  // font-family: $englishFont;
+  overflow-x: hidden;
+}
+
+.navbar-collapse {
+  @include for_tablet_ph() {
+    box-shadow: 0 3px 6px rgba($color: $black, $alpha: 0.16) !important;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+
+/* ====================================== _____________ Reset Styles _____________ ====================================== */

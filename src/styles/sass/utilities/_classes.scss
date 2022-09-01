@@ -1,0 +1,245 @@
+/* ====================================== _____________ Classes Styles _____________ ====================================== */
+// == Container //
+.leftContainer {
+  margin-left: auto;
+  padding: 0 15px;
+  padding-right: 0;
+  @include for_phone {
+    width: 100%;
+    padding-right: 15px;
+    margin-right: auto;
+  }
+  @include for_miniTb {
+    width: calc(540px + ((100vw - 540px) / 2));
+    padding-right: 15px;
+    margin-right: auto;
+  }
+  @include for_tablet {
+    width: calc(720px + ((100vw - 720px) / 2));
+    padding-right: 15px;
+    margin-right: auto;
+  }
+  @include for_miniLt {
+    width: calc(960px + ((100vw - 960px) / 2));
+  }
+  @include for_labtop {
+    width: calc(1140px + ((100vw - 1140px) / 2));
+  }
+}
+
+.halfContainer {
+  margin: 0;
+  padding: 0;
+  &.start {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin-inline-start: auto;
+  }
+  &.end {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin-inline-end: auto;
+  }
+  @include for_phone() {
+    max-width: calc(100% / 1);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+  @include for_miniTb() {
+    max-width: calc(540px / 1);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+  @include for_tablet() {
+    max-width: calc(720px / 1);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+  @include for_miniLt() {
+    max-width: calc(960px / 2);
+  }
+  @include for_labtop() {
+    max-width: calc(1140px / 2);
+  }
+  @media (min-width: 1400px) {
+    max-width: calc(1320px / 2);
+  }
+}
+
+// == Container //
+
+// == Section //
+section {
+  &.padding {
+    padding: 50px 0;
+    @include for_miniTb_ph() {
+      padding: 25px 0;
+    }
+  }
+}
+// == Section //
+
+// == Color //
+.mainColor {
+  color: $mainColor !important;
+}
+.secColor {
+  color: $secColor !important;
+}
+.white {
+  color: $white !important;
+}
+.black {
+  color: $black !important;
+}
+// == Color //
+
+// == Bg Color //
+.mainBgColor {
+  background-color: $mainColor !important;
+}
+.secBgColor {
+  background-color: $secColor !important;
+}
+.whtBg {
+  background-color: $white !important;
+}
+.blkBg {
+  background-color: $black !important;
+}
+.offBg {
+  background-color: rgba(187, 187, 187, 0.1) !important;
+}
+.pendingBg {
+  background-color: #d58a12 !important;
+}
+.errorBg {
+  background-color: #cf1313 !important;
+}
+.successBg {
+  background-color: #5cab1b !important;
+}
+// == Bg Color //
+
+// == Fonts //
+.font_light {
+  font-weight: 300;
+}
+.font_regular {
+  font-weight: 400;
+}
+.font_medium {
+  font-weight: 600;
+}
+.font_bold {
+  font-weight: 800;
+}
+.font_bolder {
+  font-weight: 900;
+}
+.font-eng {
+  font-family: $englishFont !important;
+}
+// == Fonts //
+
+// == Texts //
+p,
+.p {
+  font-size: $font-1000;
+  font-weight: 400;
+  color: $textColor;
+  margin-bottom: 1rem;
+}
+// == Texts //
+
+// == Img //
+.img-radius {
+  border-radius: 5px;
+  span {
+    border-radius: 5px;
+    img {
+      border-radius: 5px;
+    }
+  }
+}
+
+.zoomIn {
+  overflow: hidden;
+  margin: 0;
+  img {
+    transition: $sl-transition;
+  }
+  &:hover {
+    img {
+      transform: scale(1.075);
+    }
+  }
+}
+
+.zoomOut {
+  overflow: hidden;
+  margin: 0;
+  img {
+    transition: $sl-transition;
+  }
+  &:hover {
+    img {
+      transform: scale(0.925);
+    }
+  }
+}
+// == Img //
+
+// == Links //
+.hover-link {
+  position: relative;
+  transition: $transition;
+  padding-bottom: 4px;
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: $mainColor;
+    transition: $transition;
+  }
+  &:hover {
+    color: $mainColor;
+    &::before {
+      width: 80%;
+    }
+  }
+}
+// == Links //
+
+// == Box Shadow //
+.boxShadow {
+  box-shadow: 0 3px 6px rgba($color: $black, $alpha: 0.16) !important;
+}
+// == Box Shadow //
+
+// == Dir //
+.dir-ltr {
+  direction: ltr;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+// == Dir //
+
+// == Width //
+.w-50 {
+  @include for_tablet_ph() {
+    width: 75% !important;
+  }
+
+  @include for_miniTb_ph() {
+    width: 100% !important;
+  }
+}
+// == Width //
+
+/* ===  =================================== _____________ Classes Styles _____________ ====================================== */
